@@ -1,0 +1,22 @@
+{
+  "name": "@codearch/core",
+  "version": "0.1.0",
+  "description": "Core orchestration engine for Code Archaeologist",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@codearch/protocol": "^0.1.0",
+    "@codearch/database": "^0.1.0",
+    "@codearch/git-engine": "^0.1.0",
+    "@codearch/ast-engine": "^0.1.0",
+    "@codearch/dependency-engine": "^0.1.0",
+    "@codearch/history-engine": "^0.1.0",
+    "@codearch/risk-engine": "^0.1.0",
+    "@codearch/ai-engine": "^0.1.0"
+  },
+  "license": "Apache-2.0"
+}

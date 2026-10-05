@@ -1,0 +1,13 @@
+{
+  "name": "@codearch/protocol",
+  "version": "0.1.0",
+  "description": "Universal protocol schemas and JSON-RPC definitions for Code Archaeologist",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": ["protocol", "code-archaeologist", "json-rpc"],
+  "license": "Apache-2.0"
+}

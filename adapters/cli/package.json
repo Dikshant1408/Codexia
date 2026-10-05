@@ -1,0 +1,15 @@
+{
+  "name": "@codearch/adapter-cli",
+  "version": "0.1.0",
+  "description": "Terminal and CLI adapter for Code Archaeologist",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@codearch/protocol": "^0.1.0"
+  },
+  "license": "Apache-2.0"
+}

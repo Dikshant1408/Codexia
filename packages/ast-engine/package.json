@@ -1,0 +1,16 @@
+{
+  "name": "@codearch/ast-engine",
+  "version": "0.1.0",
+  "description": "AST parser, symbol indexer and cyclomatic complexity engine",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@codearch/protocol": "^0.1.0",
+    "typescript": "^5.7.3"
+  },
+  "license": "Apache-2.0"
+}

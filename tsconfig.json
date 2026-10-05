@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "baseUrl": ".",
+    "paths": {
+      "@codearch/protocol": ["./packages/protocol/dist/index.d.ts", "./packages/protocol/src/index.ts"],
+      "@codearch/database": ["./packages/database/dist/index.d.ts", "./packages/database/src/index.ts"],
+      "@codearch/git-engine": ["./packages/git-engine/dist/index.d.ts", "./packages/git-engine/src/index.ts"],
+      "@codearch/ast-engine": ["./packages/ast-engine/dist/index.d.ts", "./packages/ast-engine/src/index.ts"],
+      "@codearch/dependency-engine": ["./packages/dependency-engine/dist/index.d.ts", "./packages/dependency-engine/src/index.ts"],
+      "@codearch/history-engine": ["./packages/history-engine/dist/index.d.ts", "./packages/history-engine/src/index.ts"],
+      "@codearch/risk-engine": ["./packages/risk-engine/dist/index.d.ts", "./packages/risk-engine/src/index.ts"],
+      "@codearch/ai-engine": ["./packages/ai-engine/dist/index.d.ts", "./packages/ai-engine/src/index.ts"],
+      "@codearch/core": ["./packages/core/dist/index.d.ts", "./packages/core/src/index.ts"],
+      "@codearch/adapter-cli": ["./adapters/cli/dist/index.d.ts", "./adapters/cli/src/index.ts"],
+      "@codearch/adapter-vscode": ["./adapters/vscode/dist/index.d.ts", "./adapters/vscode/src/index.ts"],
+      "@codearch/adapter-antigravity": ["./adapters/antigravity/dist/index.d.ts", "./adapters/antigravity/src/index.ts"]
+    }
+  }
+}

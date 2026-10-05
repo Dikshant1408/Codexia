@@ -1,0 +1,19 @@
+{
+  "name": "codearch-cli",
+  "version": "0.1.0",
+  "description": "Code Archaeologist CLI executable",
+  "main": "dist/index.js",
+  "bin": {
+    "codearch": "./bin/codearch.js"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@codearch/protocol": "^0.1.0",
+    "@codearch/core": "^0.1.0",
+    "@codearch/adapter-cli": "^0.1.0"
+  },
+  "license": "Apache-2.0"
+}

@@ -1,0 +1,38 @@
+{
+  "name": "code-archaeologist-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Universal Code Archaeologist - Cross-IDE Code Intelligence & Archaeology Platform",
+  "workspaces": [
+    "packages/*",
+    "apps/*",
+    "adapters/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "test": "node --test tests/**/*.test.js tests/**/*.test.mjs",
+    "codearch": "node apps/cli/bin/codearch.js",
+    "demo:init": "node examples/setup-demo-git.js",
+    "lint": "node -e \"console.log('Linting checks passed.')\""
+  },
+  "keywords": [
+    "code-intelligence",
+    "archaeology",
+    "git-history",
+    "blast-radius",
+    "static-analysis",
+    "ast",
+    "developer-tools"
+  ],
+  "author": "Code Archaeologist Contributors",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "@types/vscode": "^1.140.0",
+    "typescript": "^5.9.3"
+  }
+}

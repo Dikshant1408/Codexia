@@ -1,0 +1,146 @@
+{
+  "name": "code-archaeologist",
+  "displayName": "Code Archaeologist",
+  "description": "Understand why code exists, how it evolved, what depends on it, and what could break if changed.",
+  "version": "0.1.0",
+  "publisher": "codearch",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Other",
+    "Linters"
+  ],
+  "keywords": [
+    "archaeology",
+    "git-blame",
+    "blast-radius",
+    "static-analysis",
+    "code-story"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "codearch.analyzeWorkspace",
+        "title": "Code Archaeologist: Analyze Workspace",
+        "category": "Code Archaeologist"
+      },
+      {
+        "command": "codearch.showCodeStory",
+        "title": "Code Archaeologist: Show Code Story",
+        "category": "Code Archaeologist"
+      },
+      {
+        "command": "codearch.showBlastRadius",
+        "title": "Code Archaeologist: Show Blast Radius",
+        "category": "Code Archaeologist"
+      },
+      {
+        "command": "codearch.investigateChanges",
+        "title": "Code Archaeologist: Investigate Changes (Who Broke This?)",
+        "category": "Code Archaeologist"
+      },
+      {
+        "command": "codearch.analyzeRisk",
+        "title": "Code Archaeologist: Analyze Risk Score",
+        "category": "Code Archaeologist"
+      },
+      {
+        "command": "codearch.findDeadCode",
+        "title": "Code Archaeologist: Find Dead Code",
+        "category": "Code Archaeologist"
+      },
+      {
+        "command": "codearch.findDuplicates",
+        "title": "Code Archaeologist: Find Duplicates",
+        "category": "Code Archaeologist"
+      },
+      {
+        "command": "codearch.inspectArchitecture",
+        "title": "Code Archaeologist: Inspect Architecture",
+        "category": "Code Archaeologist"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "submenu": "codearch.contextSubmenu",
+          "group": "7_modification"
+        }
+      ],
+      "codearch.contextSubmenu": [
+        {
+          "command": "codearch.showCodeStory",
+          "group": "1_archaeology@1"
+        },
+        {
+          "command": "codearch.showBlastRadius",
+          "group": "1_archaeology@2"
+        },
+        {
+          "command": "codearch.investigateChanges",
+          "group": "1_archaeology@3"
+        },
+        {
+          "command": "codearch.analyzeRisk",
+          "group": "1_archaeology@4"
+        }
+      ],
+      "submenus": [
+        {
+          "id": "codearch.contextSubmenu",
+          "label": "🔎 Archaeology"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Code Archaeologist",
+      "properties": {
+        "codeArchaeologist.ai.enabled": {
+          "type": "boolean",
+          "default": false,
+          "description": "Enable optional AI assistance (disabled by default for 100% offline privacy)."
+        },
+        "codeArchaeologist.ai.provider": {
+          "type": "string",
+          "enum": ["none", "ollama", "openai"],
+          "default": "none",
+          "description": "AI provider backend (local Ollama or OpenAI compatible)."
+        },
+        "codeArchaeologist.ai.model": {
+          "type": "string",
+          "default": "qwen2.5-coder:7b",
+          "description": "Model identifier for local Ollama or OpenAI compatible endpoint."
+        },
+        "codeArchaeologist.analysis.maxFiles": {
+          "type": "number",
+          "default": 10000,
+          "description": "Maximum number of source files to index per workspace."
+        },
+        "codeArchaeologist.ui.theme": {
+          "type": "string",
+          "enum": ["dark", "light", "auto"],
+          "default": "dark",
+          "description": "Visual theme for Code Archaeologist dashboard and inspection panels."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@codearch/protocol": "^0.1.0",
+    "@codearch/core": "^0.1.0",
+    "@codearch/adapter-vscode": "^0.1.0"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0"
+  },
+  "license": "Apache-2.0"
+}

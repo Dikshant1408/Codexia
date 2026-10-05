@@ -1,0 +1,17 @@
+{
+  "name": "@codearch/risk-engine",
+  "version": "0.1.0",
+  "description": "Transparent 5-factor risk scoring and Code DNA engine",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@codearch/protocol": "^0.1.0",
+    "@codearch/database": "^0.1.0",
+    "@codearch/git-engine": "^0.1.0"
+  },
+  "license": "Apache-2.0"
+}
