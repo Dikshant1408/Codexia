@@ -1,11 +1,18 @@
-# Codexia 🔎
+<p align="center">
+  <img src="assets/logo.png" alt="Codexia Logo" width="220" />
+</p>
 
-> **Universal Code Archaeology & Software Intelligence Platform**
-> 
-> *Understand why code exists, how it evolved, what depends on it, and what could break if it changes.*
+<h1 align="center">Codexia 🔎</h1>
 
-[![Open VSX](https://img.shields.io/badge/Open%20VSX-Dikshant1408.codexia-blue.svg)](https://open-vsx.org/extension/Dikshant1408/codexia)
-[![License](https://img.shields.io/badge/License-Apache_2.0-green.svg)](LICENSE)
+<p align="center">
+  <strong>Universal Code Archaeology & Software Intelligence Platform</strong><br>
+  <em>Understand why code exists, how it evolved, what depends on it, and what could break if it changes.</em>
+</p>
+
+<p align="center">
+  <a href="https://open-vsx.org/extension/Dikshant1408/codexia"><img src="https://img.shields.io/badge/Open%20VSX-Dikshant1408.codexia-blue.svg" alt="Open VSX" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache_2.0-green.svg" alt="License" /></a>
+</p>
 
 A cross-IDE code intelligence and software archaeology platform combining Git history, AST static analysis, dependency graphs, and transparent risk scoring into a unified developer experience.
 
@@ -176,13 +183,13 @@ Marketplace page: [**open-vsx.org/extension/Dikshant1408/codexia**](https://open
 ### Install via Pre-built VSIX (VS Code / Cursor / Windsurf / Antigravity):
 Install the packaged extension file directly:
 ```bash
-code --install-extension codexia-0.1.0.vsix
+code --install-extension codexia-0.1.1.vsix
 ```
 Or in your editor:
 1. Open the Extensions view (`Ctrl+Shift+X` / `Cmd+Shift+X`)
 2. Click the `...` (Views and More Actions) menu at top right
 3. Select **Install from VSIX...**
-4. Choose [`codexia-0.1.0.vsix`](codexia-0.1.0.vsix)
+4. Choose [`codexia-0.1.1.vsix`](codexia-0.1.1.vsix)
 
 To rebuild and package the extension from source at any time:
 ```bash

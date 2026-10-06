@@ -1,8 +1,13 @@
-# Codexia 🔎
+<p align="center">
+  <img src="icon.png" alt="Codexia Logo" width="160" />
+</p>
 
-**Universal Cross-IDE Code Archaeology & Forensic Intelligence Platform**
+<h1 align="center">Codexia 🔎</h1>
 
-> Understand why code exists, how it evolved, what depends on it, and what could break if changed.
+<p align="center">
+  <strong>Universal Cross-IDE Code Archaeology & Forensic Intelligence Platform</strong><br>
+  <em>Understand why code exists, how it evolved, what depends on it, and what could break if changed.</em>
+</p>
 
 Codexia is an offline-first, forensic code intelligence extension. It combines AST static analysis, Git revision history, call graph dependency tracking, and multi-factor risk scoring to give engineers immediate context into complex codebases.
 

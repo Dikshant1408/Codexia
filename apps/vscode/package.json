@@ -2,7 +2,7 @@
   "name": "codexia",
   "displayName": "Codexia",
   "description": "Understand why code exists, how it evolved, what depends on it, and what could break if changed.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "Dikshant1408",
   "repository": {
     "type": "git",
@@ -12,6 +12,7 @@
   "bugs": {
     "url": "https://github.com/Dikshant1408/Codexia/issues"
   },
+  "icon": "icon.png",
   "engines": {
     "vscode": "^1.85.0"
   },
@@ -150,7 +151,7 @@
   "scripts": {
     "build": "tsc && npm run bundle",
     "bundle": "npx esbuild src/extension.ts --bundle --platform=node --target=node20 --format=cjs --external:vscode --outfile=dist/extension.cjs",
-    "package": "npm run build && npx @vscode/vsce package --no-dependencies --out ../../codexia-0.1.0.vsix"
+    "package": "npm run build && npx @vscode/vsce package --no-dependencies --out ../../codexia-0.1.1.vsix"
   },
   "dependencies": {
     "@codearch/protocol": "^0.1.0",

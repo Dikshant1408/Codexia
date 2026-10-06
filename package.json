@@ -1,6 +1,6 @@
 {
   "name": "codexia",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "type": "module",
   "description": "Codexia - Universal Cross-IDE Code Intelligence & Archaeology Platform",
@@ -24,7 +24,7 @@
     "demo:init": "node examples/setup-demo-git.js",
     "lint": "node -e \"console.log('Linting checks passed.')\"",
     "package:extension": "npm run package --workspace apps/vscode",
-    "publish:openvsx": "ovsx publish codexia-0.1.0.vsix -p"
+    "publish:openvsx": "ovsx publish codexia-0.1.1.vsix -p"
   },
   "keywords": [
     "code-intelligence",
