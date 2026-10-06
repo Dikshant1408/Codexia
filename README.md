@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://open-vsx.org/extension/AxrydeStudio/codexia"><img src="https://img.shields.io/badge/Open%20VSX-AxrydeStudio.codexia-blue.svg" alt="Open VSX" /></a>
+  <a href="https://open-vsx.org/extension/AxrydeStudio/codexia-archaeologist"><img src="https://img.shields.io/badge/Open%20VSX-AxrydeStudio.codexia--archaeologist-blue.svg" alt="Open VSX" /></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache_2.0-green.svg" alt="License" /></a>
 </p>
 
@@ -176,9 +176,9 @@ To enable local AI summaries using Ollama:
 ### Install via Open VSX Registry (VSCodium, Cursor, Gitpod, Eclipse Theia):
 Search for **`Codexia`** in the extensions marketplace or install via CLI:
 ```bash
-codium --install-extension AxrydeStudio.codexia
+codium --install-extension AxrydeStudio.codexia-archaeologist
 ```
-Marketplace page: [**open-vsx.org/extension/AxrydeStudio/codexia**](https://open-vsx.org/extension/AxrydeStudio/codexia)
+Marketplace page: [**open-vsx.org/extension/AxrydeStudio/codexia-archaeologist**](https://open-vsx.org/extension/AxrydeStudio/codexia-archaeologist)
 
 ### Install via Pre-built VSIX (VS Code / Cursor / Windsurf / Antigravity):
 Install the packaged extension file directly:
