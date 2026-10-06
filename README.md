@@ -4,6 +4,9 @@
 > 
 > *Understand why code exists, how it evolved, what depends on it, and what could break if it changes.*
 
+[![Open VSX](https://img.shields.io/badge/Open%20VSX-Dikshant1408.codexia-blue.svg)](https://open-vsx.org/extension/Dikshant1408/codexia)
+[![License](https://img.shields.io/badge/License-Apache_2.0-green.svg)](LICENSE)
+
 A cross-IDE code intelligence and software archaeology platform combining Git history, AST static analysis, dependency graphs, and transparent risk scoring into a unified developer experience.
 
 ---
@@ -163,8 +166,15 @@ To enable local AI summaries using Ollama:
 
 ## 🔌 Cross-IDE Support & Extension Installation
 
-### VS Code / Cursor / Windsurf / Antigravity / VSCodium:
-Install the pre-built `.vsix` extension package:
+### Install via Open VSX Registry (VSCodium, Cursor, Gitpod, Eclipse Theia):
+Search for **`Codexia`** in the extensions marketplace or install via CLI:
+```bash
+codium --install-extension Dikshant1408.codexia
+```
+Marketplace page: [**open-vsx.org/extension/Dikshant1408/codexia**](https://open-vsx.org/extension/Dikshant1408/codexia)
+
+### Install via Pre-built VSIX (VS Code / Cursor / Windsurf / Antigravity):
+Install the packaged extension file directly:
 ```bash
 code --install-extension codexia-0.1.0.vsix
 ```
