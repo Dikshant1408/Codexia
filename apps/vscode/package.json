@@ -1,9 +1,17 @@
 {
-  "name": "code-archaeologist",
-  "displayName": "Code Archaeologist",
+  "name": "codexia",
+  "displayName": "Codexia",
   "description": "Understand why code exists, how it evolved, what depends on it, and what could break if changed.",
   "version": "0.1.0",
-  "publisher": "codearch",
+  "publisher": "Dikshant1408",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Dikshant1408/Codexia.git"
+  },
+  "homepage": "https://github.com/Dikshant1408/Codexia#readme",
+  "bugs": {
+    "url": "https://github.com/Dikshant1408/Codexia/issues"
+  },
   "engines": {
     "vscode": "^1.85.0"
   },
@@ -22,48 +30,48 @@
   "activationEvents": [
     "onStartupFinished"
   ],
-  "main": "./dist/extension.js",
+  "main": "./dist/extension.cjs",
   "contributes": {
     "commands": [
       {
         "command": "codearch.analyzeWorkspace",
-        "title": "Code Archaeologist: Analyze Workspace",
-        "category": "Code Archaeologist"
+        "title": "Codexia: Analyze Workspace",
+        "category": "Codexia"
       },
       {
         "command": "codearch.showCodeStory",
-        "title": "Code Archaeologist: Show Code Story",
-        "category": "Code Archaeologist"
+        "title": "Codexia: Show Code Story",
+        "category": "Codexia"
       },
       {
         "command": "codearch.showBlastRadius",
-        "title": "Code Archaeologist: Show Blast Radius",
-        "category": "Code Archaeologist"
+        "title": "Codexia: Show Blast Radius",
+        "category": "Codexia"
       },
       {
         "command": "codearch.investigateChanges",
-        "title": "Code Archaeologist: Investigate Changes (Who Broke This?)",
-        "category": "Code Archaeologist"
+        "title": "Codexia: Investigate Changes (Who Broke This?)",
+        "category": "Codexia"
       },
       {
         "command": "codearch.analyzeRisk",
-        "title": "Code Archaeologist: Analyze Risk Score",
-        "category": "Code Archaeologist"
+        "title": "Codexia: Analyze Risk Score",
+        "category": "Codexia"
       },
       {
         "command": "codearch.findDeadCode",
-        "title": "Code Archaeologist: Find Dead Code",
-        "category": "Code Archaeologist"
+        "title": "Codexia: Find Dead Code",
+        "category": "Codexia"
       },
       {
         "command": "codearch.findDuplicates",
-        "title": "Code Archaeologist: Find Duplicates",
-        "category": "Code Archaeologist"
+        "title": "Codexia: Find Duplicates",
+        "category": "Codexia"
       },
       {
         "command": "codearch.inspectArchitecture",
-        "title": "Code Archaeologist: Inspect Architecture",
-        "category": "Code Archaeologist"
+        "title": "Codexia: Inspect Architecture",
+        "category": "Codexia"
       }
     ],
     "menus": {
@@ -94,45 +102,55 @@
       "submenus": [
         {
           "id": "codearch.contextSubmenu",
-          "label": "🔎 Archaeology"
+          "label": "🔎 Codexia Archaeology"
         }
       ]
     },
     "configuration": {
-      "title": "Code Archaeologist",
+      "title": "Codexia",
       "properties": {
-        "codeArchaeologist.ai.enabled": {
+        "codexia.ai.enabled": {
           "type": "boolean",
           "default": false,
           "description": "Enable optional AI assistance (disabled by default for 100% offline privacy)."
         },
-        "codeArchaeologist.ai.provider": {
+        "codexia.ai.provider": {
           "type": "string",
-          "enum": ["none", "ollama", "openai"],
+          "enum": [
+            "none",
+            "ollama",
+            "openai"
+          ],
           "default": "none",
           "description": "AI provider backend (local Ollama or OpenAI compatible)."
         },
-        "codeArchaeologist.ai.model": {
+        "codexia.ai.model": {
           "type": "string",
           "default": "qwen2.5-coder:7b",
           "description": "Model identifier for local Ollama or OpenAI compatible endpoint."
         },
-        "codeArchaeologist.analysis.maxFiles": {
+        "codexia.analysis.maxFiles": {
           "type": "number",
           "default": 10000,
           "description": "Maximum number of source files to index per workspace."
         },
-        "codeArchaeologist.ui.theme": {
+        "codexia.ui.theme": {
           "type": "string",
-          "enum": ["dark", "light", "auto"],
+          "enum": [
+            "dark",
+            "light",
+            "auto"
+          ],
           "default": "dark",
-          "description": "Visual theme for Code Archaeologist dashboard and inspection panels."
+          "description": "Visual theme for Codexia dashboard and inspection panels."
         }
       }
     }
   },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc && npm run bundle",
+    "bundle": "npx esbuild src/extension.ts --bundle --platform=node --target=node20 --format=cjs --external:vscode --outfile=dist/extension.cjs",
+    "package": "npm run build && npx @vscode/vsce package --no-dependencies --out ../../codexia-0.1.0.vsix"
   },
   "dependencies": {
     "@codearch/protocol": "^0.1.0",

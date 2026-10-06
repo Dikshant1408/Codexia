@@ -161,9 +161,24 @@ To enable local AI summaries using Ollama:
 
 ---
 
-## 🔌 Cross-IDE Support
+## 🔌 Cross-IDE Support & Extension Installation
 
-- **VS Code**: Install via `apps/vscode` (commands, context menu `🔎 Archaeology`, webview panel, decorations).
+### VS Code / Cursor / Windsurf / Antigravity / VSCodium:
+Install the pre-built `.vsix` extension package:
+```bash
+code --install-extension codexia-0.1.0.vsix
+```
+Or in your editor:
+1. Open the Extensions view (`Ctrl+Shift+X` / `Cmd+Shift+X`)
+2. Click the `...` (Views and More Actions) menu at top right
+3. Select **Install from VSIX...**
+4. Choose [`codexia-0.1.0.vsix`](codexia-0.1.0.vsix)
+
+To rebuild and package the extension from source at any time:
+```bash
+npm run package:extension
+```
+
 - **Antigravity**: Built-in adapter and agentic skill definition in `adapters/antigravity`.
 - **JetBrains / Zed / Neovim / Visual Studio**: See [adapters/README.md](adapters/README.md) for the universal protocol adapter specification.
 

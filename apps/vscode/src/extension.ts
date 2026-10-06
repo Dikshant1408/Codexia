@@ -6,10 +6,11 @@ export function activate(context: vscode.ExtensionContext): void {
   const workspaceFolders = vscode.workspace.workspaceFolders;
   const rootPath = workspaceFolders && workspaceFolders.length > 0 ? workspaceFolders[0].uri.fsPath : process.cwd();
 
-  const config = vscode.workspace.getConfiguration('codeArchaeologist');
-  const aiEnabled = config.get<boolean>('ai.enabled', false);
-  const aiProvider = config.get<'none' | 'ollama' | 'openai'>('ai.provider', 'none');
-  const aiModel = config.get<string>('ai.model', 'qwen2.5-coder:7b');
+  const config = vscode.workspace.getConfiguration('codexia');
+  const legacyConfig = vscode.workspace.getConfiguration('codeArchaeologist');
+  const aiEnabled = config.get<boolean>('ai.enabled') ?? legacyConfig.get<boolean>('ai.enabled', false);
+  const aiProvider = config.get<'none' | 'ollama' | 'openai'>('ai.provider') ?? legacyConfig.get<'none' | 'ollama' | 'openai'>('ai.provider', 'none');
+  const aiModel = config.get<string>('ai.model') ?? legacyConfig.get<string>('ai.model', 'qwen2.5-coder:7b');
 
   const engine = new ArchaeologyEngine({
     workspaceRoot: rootPath,
