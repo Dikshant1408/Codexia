@@ -1,6 +1,8 @@
-# Code Archaeologist 🔎
+# Codexia 🔎
 
-> **Understand why code exists, how it evolved, what depends on it, and what could break if it changes.**
+> **Universal Code Archaeology & Software Intelligence Platform**
+> 
+> *Understand why code exists, how it evolved, what depends on it, and what could break if it changes.*
 
 A cross-IDE code intelligence and software archaeology platform combining Git history, AST static analysis, dependency graphs, and transparent risk scoring into a unified developer experience.
 
@@ -163,7 +165,7 @@ To enable local AI summaries using Ollama:
 
 - **VS Code**: Install via `apps/vscode` (commands, context menu `🔎 Archaeology`, webview panel, decorations).
 - **Antigravity**: Built-in adapter and agentic skill definition in `adapters/antigravity`.
-- **JetBrains / Zed / Neovim / Visual Studio**: See [adapters/README.md](file:///d:/Projects/Startup%20Ideas/Exts/Codexia/adapters/README.md) for the universal protocol adapter specification.
+- **JetBrains / Zed / Neovim / Visual Studio**: See [adapters/README.md](adapters/README.md) for the universal protocol adapter specification.
 
 ---
 
@@ -181,14 +183,14 @@ npm test
 
 ## 📜 Documentation
 
-- [ARCHITECTURE.md](file:///d:/Projects/Startup%20Ideas/Exts/Codexia/docs/ARCHITECTURE.md) — Architectural design and package layout
-- [PROTOCOL.md](file:///d:/Projects/Startup%20Ideas/Exts/Codexia/docs/PROTOCOL.md) — Universal Archaeology Protocol specifications
-- [ADAPTERS.md](file:///d:/Projects/Startup%20Ideas/Exts/Codexia/adapters/README.md) — Guide to building adapters for new editors
-- [PRIVACY.md](file:///d:/Projects/Startup%20Ideas/Exts/Codexia/docs/PRIVACY.md) — Privacy-first local security guarantees
-- [SECURITY.md](file:///d:/Projects/Startup%20Ideas/Exts/Codexia/docs/SECURITY.md) — Safe argument parsing and execution policies
+- [ARCHITECTURE.md](docs/ARCHITECTURE.md) — Architectural design and package layout
+- [PROTOCOL.md](docs/PROTOCOL.md) — Universal Archaeology Protocol specifications
+- [ADAPTERS.md](adapters/README.md) — Guide to building adapters for new editors
+- [PRIVACY.md](docs/PRIVACY.md) — Privacy-first local security guarantees
+- [SECURITY.md](docs/SECURITY.md) — Safe argument parsing and execution policies
 
 ---
 
 ## 📄 License
 
-Licensed under the Apache License, Version 2.0. See [LICENSE](file:///d:/Projects/Startup%20Ideas/Exts/Codexia/LICENSE).
+Licensed under the Apache License, Version 2.0. See [LICENSE](LICENSE).

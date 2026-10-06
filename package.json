@@ -1,9 +1,17 @@
 {
-  "name": "code-archaeologist-monorepo",
+  "name": "codexia",
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Universal Code Archaeologist - Cross-IDE Code Intelligence & Archaeology Platform",
+  "description": "Codexia - Universal Cross-IDE Code Intelligence & Archaeology Platform",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Dikshant1408/Codexia.git"
+  },
+  "homepage": "https://github.com/Dikshant1408/Codexia#readme",
+  "bugs": {
+    "url": "https://github.com/Dikshant1408/Codexia/issues"
+  },
   "workspaces": [
     "packages/*",
     "apps/*",
