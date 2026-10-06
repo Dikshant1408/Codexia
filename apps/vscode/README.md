@@ -47,6 +47,22 @@ Customize Codexia in **Preferences: Open Settings (UI)** under `Codexia`:
 
 ---
 
+## ☕ Support
+
+If you find **Codexia** helpful for your workflow and daily productivity, consider supporting its ongoing development:
+
+👉 [**Support on chai4.me/godrikt**](https://www.chai4.me/godrikt)
+
+---
+
+## 👥 Credits & Author
+
+- **Company**: AxrydeStudio
+- **Developer**: Godrikt
+- **Role**: Workflow System & Original Concept
+
+---
+
 ## 📄 License
 
 Licensed under the Apache-2.0 License.
