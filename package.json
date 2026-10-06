@@ -23,7 +23,8 @@
     "codearch": "node apps/cli/bin/codearch.js",
     "demo:init": "node examples/setup-demo-git.js",
     "lint": "node -e \"console.log('Linting checks passed.')\"",
-    "package:extension": "npm run package --workspace apps/vscode"
+    "package:extension": "npm run package --workspace apps/vscode",
+    "publish:openvsx": "ovsx publish codexia-0.1.0.vsix -p"
   },
   "keywords": [
     "code-intelligence",
